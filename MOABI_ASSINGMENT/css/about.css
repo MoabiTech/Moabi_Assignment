@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*link ena ke ya li web fonts tse online
+otlabona ha font e chencha */
+*{
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cls: rgb(234, 245, 255);
+    --border-cls: #c2c1d7;
+    --h1-size: 4em;
+    --black: #212222;
+}
+
+
+body{
+    background: #dfdee6;
+}
+
+
+
+
+/* removing default styling of links */
+a{
+    text-decoration: none;
+}
+
+/* removing default styling of lists */
+li{
+    list-style: none;
+}
+
+header{
+    height: 100dvh;
+    background: var(--black);
+    display: flex;
+    flex-direction: column;
+    animation: animate 30s linear infinite;
+}
+
+
+
+
+nav{
+    display: flex;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5spx);
+    align-items: center;
+    height: 10vh;
+    justify-content: space-around;
+}
+
+.logo{
+    color: var(--cls);
+}
+.nav-links ul{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a{
+    color: var(--cls);
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 200ms;
+
+}
+
+.nav-links a:hover{
+    opacity: .5;
+    letter-spacing: .5px;
+}
+
+.color{
+    border-bottom: 2px solid var(--border-cls);
+}
+
+.active{
+    border-bottom: 2px solid var(--border-cls);
+}
+
+
+.svg img{
+    width: 500px;
+    height: 500px;
+}
+
+
+.content{
+    color: #dfdee6;
+}
+
+.content h1{
+    padding: 20px 0;
+}
+
+.about{
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 10em;
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #050505ef;
+    color: var(--cls);
+    height: 40px
+}   
